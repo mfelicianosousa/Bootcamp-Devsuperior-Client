@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import br.net.mfs.Client.entities.Client;
 
+
 @Repository
 public interface ClientRepository extends JpaRepository<Client, Long> {
 

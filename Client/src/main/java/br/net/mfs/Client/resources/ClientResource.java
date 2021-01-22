@@ -21,6 +21,7 @@ public class ClientResource {
 	
 	@GetMapping
 	public ResponseEntity<List<Client>> findAll() {
+		
 		//List<Client> list = new ArrayList<>();
 		//list.add(new Client(1L, "Maria da Silva","07712084890",6900.0,Instant.now(), 3)) ;
 		//list.add(new Client(2L, "Mauricio de Souza","9099084890",8300.0,Instant.now(), 3)) ;
