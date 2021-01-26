@@ -1,49 +1,41 @@
-package br.net.mfs.Client.entities;
+package br.net.mfs.Client.dto;
 
 import java.io.Serializable;
-import java.time.Instant;
 import java.util.Calendar;
-import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import br.net.mfs.Client.entities.Client;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
-@Entity
-@Table(name="Client")
-public class Client implements Serializable {
+public class ClientDTO implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id ;
 	private String name;
 	private String cpf ;
 	private Double income ;
-
-	@Temporal(TemporalType.DATE)
 	private Calendar birthDate ;
 	private int children ;
 
-	public Client() {
+	public ClientDTO() {
 		
 	}
 
-	public Client(Long id, String name, String cpf, Double income, Calendar birthDate, int children) {
+	public ClientDTO(Long id, String name, String cpf, Double income, Calendar birthDate, int children) {
 		this.id = id;
 		this.name = name;
 		this.cpf = cpf;
 		this.income = income;
 		this.birthDate = birthDate;
 		this.children = children;
+	}
+	
+	public ClientDTO( Client entity ) {
+		this.id = entity.getId();
+		this.name = entity.getName();
+		this.cpf = entity.getCpf();
+		this.income = entity.getIncome();
+		this.birthDate = entity.getBirthDate();
+		this.children = entity.getChildren();
 	}
 
 	public Long getId() {
@@ -110,7 +102,7 @@ public class Client implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Client other = (Client) obj;
+		ClientDTO other = (ClientDTO) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
@@ -118,5 +110,6 @@ public class Client implements Serializable {
 			return false;
 		return true;
 	}
+
 	
 }
