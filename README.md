@@ -66,3 +66,19 @@ Todas as requisições deverão funcionar perfeitamente.
 
 ### DELETE /clients/1
 
+# Tecnologias utilizadas
+
+## Back end
+
+### Java
+### Spring Boot
+### JPA / Banco de dados H2
+### Maven
+
+
+
+# Autor
+
+Marcelino Feliciano de Sousa
+
+https://www.linkedin.com/in/marcelino-feliciano-b5076024/
