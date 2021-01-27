@@ -2,7 +2,7 @@
 
 ## Trabalho final do capítulo
 
-###Enunciado do trabalho
+### Enunciado do trabalho
 
 Você deverá entregar um projeto String Boot 2.4.x contendo um CRUD completo de web services REST para acessar um recurso de clientes, contendo as cinco operações báiscas apreendidas no capítulo:
 
