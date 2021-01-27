@@ -1,6 +1,6 @@
 # Bootcamp-DevSuperior-Crud Client 
 
-[![NPM](https://img.shields.io/npm/1/react)](https://github.com/mfelicianosousa/Bootcamp-Devsuperior-Client/blob/main/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/mfelicianosousa/Bootcamp-Devsuperior-Client/blob/main/LICENSE)
 
 ## Trabalho final do capítulo-01
 
