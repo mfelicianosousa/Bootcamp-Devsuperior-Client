@@ -1,6 +1,6 @@
-# Bootcamp-Devsuperior-crud Client
+# Bootcamp-DevSuperior-Crud Client 
 
-## Trabalho final do capítulo
+## Trabalho final do capítulo-01
 
 ### Enunciado do trabalho
 
@@ -20,7 +20,7 @@ Um cliente possui nome, CPF, renda, data de nascimento, e quantidade de filhos. 
   
   Seu projeto deverá fazer um seed de pelo menos 10 clientes com dados SIGNIFICATIVOS ( não é para usar dados sem significados como "Nome 1", "Nome 2", etc.).
   
-  ## Correção
+## Correção
   
 ### 1) Importação do projeto
 
@@ -30,17 +30,17 @@ O professor deverá ser capaz de fazer um simples clone do projeto no GitHub, e 
 
 Todas as requisições deverão funcionar perfeitamente.
 
-#### Buscar paginada de clientes
+## Buscar paginada de clientes
 
 #### GET /clients?page=0&linesPerPage=12&direction=ASC&orderBy=name
 
-#### Buscar de cliente por id
+## Buscar de cliente por id
 
-#### GET /clients/1
+### GET /clients/1
 
-#### Inserção de novo cliente
+## Inserção de novo cliente
 
-#### POST /clients
+### POST /clients
 #### {
 ####         "name" : "Maria Madalena Magali",
 ####         "cpf"  : "13578902468",
@@ -49,9 +49,9 @@ Todas as requisições deverão funcionar perfeitamente.
 ####         "children": 0
 #### }
 
-#### Atualização de cliente
+## Atualização de cliente
 
-#### PUT /clients/1
+### PUT /clients/1
 #### {
 ####         "name" : "Maria Magali Madalena",
 ####         "cpf"  : "13578902468",
@@ -60,7 +60,7 @@ Todas as requisições deverão funcionar perfeitamente.
 ####         "children": 0
 #### }
 
-#### Deleção de Cliente
+## Deleção de Cliente
 
-#### DELETE /clients/1
+### DELETE /clients/1
 
